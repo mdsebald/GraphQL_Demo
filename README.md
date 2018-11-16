@@ -13,13 +13,17 @@ https://tecadmin.net/install-postgresql-server-on-ubuntu/
 After installing postgreSQL, it needed to be restarted and the `postgres` password needed to be reset
 
 `$ /etc/init.d/postgresql start`
+
 `$ /etc/init.d/postgresql stop`
+
 `$ /etc/init.d/postgresql restart`
+
 `$ /etc/init.d/postgresql status`
 
 Login to PostgreSQL (default user name: postgres):  
 
 `$ sudo su - postgres`
+
 `$ psql`
 
 Open a `psql` session as the postgres user (you won't be asked for the password
@@ -37,7 +41,7 @@ Removed the quotes around `test:` in th aliases list to suppress warnings.
 
 
 
-To start your Phoenix server:
+### To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
   * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
