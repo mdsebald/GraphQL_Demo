@@ -1,6 +1,4 @@
-defmodule Community.Schema do
-
-@doc """
+defmodule CommunityWeb.Schema do
   use Absinthe.Schema
 
   alias CommunityWeb.NewsResolver
@@ -12,14 +10,9 @@ defmodule Community.Schema do
   end
 
   query do
-    field :all_links, non_null(list_of(non_null(:link)))
+    field :all_links, non_null(list_of(non_null(:link))) do
+      resolve &NewsResolver.all_links/3
+    end
   end
-
-  field :all_links, non_null(list_of(non_null(:link))) do
-    resolve &NewsResolver.all_links/3
-  end
-
-end
-"""
 
 end
