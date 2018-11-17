@@ -38,10 +38,11 @@ In the main `mix.exs` file  changed dependancy `{:cowboy, "~> 1.0"}`  to `{:cowb
 and changed the `:absinthe_plug` dependency version from `1.3.4` to `1.4.6`
 Removed the quotes around `test:` in th aliases list to suppress warnings.
 
+### To Start Demo
+Start your server with `iex -S mix phx.server` and then open your browser to http://localhost:4000/graphiql.
 
 
-
-### To start your Phoenix server:
+### Generic Phoenix Server Info
 
   * Install dependencies with `mix deps.get`
   * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
